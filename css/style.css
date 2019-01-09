@@ -119,6 +119,7 @@ textarea {
 input[placeholder]::placeholder {
     color: lightgrey;
     font-style: italic;
+
 }
 
 .option {
