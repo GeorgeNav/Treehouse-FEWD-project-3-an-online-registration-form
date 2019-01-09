@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Josefin Sans", sans-serif;
+    color: grey;
+    background-color: white;
+}
+
+label {
+    display: block;
+    padding: 1em 0 1em 0;
+}
+
+form {
+    padding: 1em;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+button {
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 2em;
+    background-color: rgb(78,187,181);
+    border: none;
+    border-radius: 0.25em;
+}
+
+textarea {
+    margin-bottom: 1em;
+}
+
+.main-header,
+.intro {
+    text-align: center;
+}
+
+.hr-small {
+    height: 1px;
+    background-color: rgb(45,57,69);
+}
+.hr-big {
+    margin-bottom: 1em;
+    height: 3px;
+    background-color: rgb(45,57,69);
+}
+
+.main-header {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 2em;
+    background-color: rgb(45,57,69);
+}
+.intro {
+    margin-bottom: 0;
+    padding: 0 1em;
+}
+.intro h2,
+legend {
+    color: rgb(45,57,69);
+}
+.intro p {
+    color: grey;
+    margin-bottom: 2em;
+}
+.intro h2 {
+    margin-top: 2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 0.25em;
+    background-color: rgb(239,240,241);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid rgb(45,57,69);
+}
+.pre {
+    margin-bottom: 0;
+}
+
+textarea {
+    padding-bottom: 3em;
+}
+
+#zip {
+    width: 160px;
+}
+
+#contact * {
+    display: block;
+}
+
+.option {
+    display: block;
+}
+
+.main-footer {
+    text-align: center;
+    font-style: italic;
+    color: lightgrey;
+}
+
+@media (min-width: 768px) {
+    section {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    #flex {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 70%;
+        margin: 1em 0;
+    }
+
+    #contact label {
+        padding: 0;
+        width: 30%;
+        align-self: center;
+    }
+}
