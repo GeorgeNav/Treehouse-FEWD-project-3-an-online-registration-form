@@ -112,6 +112,13 @@ textarea {
     display: block;
 }
 
+#name::placeholder,
+#email::placeholder {
+    text-align: right;
+    color: lightgrey;
+    font-style: italic;
+}
+
 .option {
     display: block;
 }
