@@ -22,21 +22,22 @@
             <hr class="hr-big">
             <hr class="hr-small">
         </section>
-        <section>
+
+        <section class="form">
             <form>
                 <fieldset id="contact">
-                    <legend><h2>Contact Information</h2></legend>
+                    <legend><strong>Contact Information</strong></legend>
                     <div id="flex">
                         <label for="name">Full Name</label> <!-- user's full name -->
-                        <input type="text" id="name" name="user_name" placeholder="Required" required>
+                        <input type="text" id="name" name="user_name" placeholder="Enter your full name" required>
                         <label for="email">Email Address</label> <!-- user's email address -->
-                        <input type="email" id="email" name="user_email" placeholder="Required" required>
+                        <input type="email" id="email" name="user_email" placeholder="Enter your email address" required>
                         <label for="phone">Phone Number</label> <!-- user's phone number -->
-                        <input type="tel" id="phone" name="user_phone">
+                        <input type="tel" id="phone" name="user_phone" placeholder="Enter your phone number">
                         <label for="street">Street Address</label>
-                        <input type="text" id="street" name="user_street">
+                        <input type="text" id="street" name="user_street" placeholder="Enter your street address">
                         <label for="city">City</label>
-                        <input type="text" id="city" name="user_city">
+                        <input type="text" id="city" name="user_city" placeholder="Enter your city">
                         <label for="state">State</label>
                         <select id="state" name="user_state">
                             <option value="" disabled selected hidden>Choose State</option>
@@ -93,13 +94,13 @@
                             <option value="WY">Wyoming (WY)</option>
                         </select>
                         <label for="zip">Zip Code</label>
-                        <input type="text" id="zip" name="user_zip">
+                        <input type="text" id="zip" name="user_zip" placeholder="Zip code">
                     </div>
                 </fieldset>
                 <hr class="hr-small">
                 <fieldset id="newsletter">
-                    <legend><h2>Newsletter</h2></legend>
-                    <label for="user_newsletter_format" class="pre">Select the newsletters you would like to recieve</label>
+                    <legend><strong>Newsletter</strong></legend>
+                    <label class="pre">Select the newsletters you would like to recieve</label>
                     <label for="html-news" class="option">
                         <input type="checkbox" id="html-news" value="html_news" name="user_newsletter_format" required>
                         HTML News
@@ -112,7 +113,7 @@
                         <input type="checkbox" id="javascript-news" value="javascript_news" name="user_newsletter_format">
                         Javascript News
                     </label>
-                    <label for="user_newsletter_format">Newsletter Format</label>
+                    <label class="pre">Newsletter Format</label>
                     <label for="html-format" class="option">
                         <input type="radio" id="html-format" value="html" name="user_newsletter_format">
                         HTML
@@ -124,7 +125,7 @@
                     <label for="liked-topics" class="pre">Other topics you would like to hear about</label>
                     <textarea id="liked-topics" name="user_liked_topics"></textarea>
                 </fieldset>
-                <button type="submit">Sign Up</button
+                <button type="submit">Sign Up</button>
             </form>
         </section>
 
