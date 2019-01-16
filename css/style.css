@@ -91,6 +91,8 @@ textarea {
     border: none;
     border-radius: 0.25em;
     background-color: rgb(239,240,241);
+    transition-property: border, background-color;
+    transition: 0.5s;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -98,8 +100,14 @@ input[type="tel"]:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border: 2px solid rgb(45,57,69);
+    border: 2px solid rgba(45,57,69,0.5);
+    background-color: aliceblue;
 }
+
+select {
+    height: 3em;
+}
+
 .pre {
     margin-bottom: 0;
 }
